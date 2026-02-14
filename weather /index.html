@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="weather-container">
+    <h1>🌦 Wanna know today's weather?</h1>
+
+    <button id="toggleMode" class="toggle-btn">🌙 Dark Mode</button>
+
+    <input type="text" id="locationInput" placeholder="Enter location">
+    <button onclick="getWeather()">Search</button>
+
+    <button id="unitToggle" class="unit-btn">Switch to °F</button>
+    <button id="forecastToggle">Show 3-Day Forecast</button>
+
+    <div class="result" id="weatherResult">
+        <img id="weatherIcon" alt="Weather Icon" style="display:none; margin-top:10px;">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
